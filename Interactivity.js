@@ -1,4 +1,6 @@
 var main = function () {
+    // Followed the book and its instructions   pg 95-147
+    //https://www.w3schools.com/js/js_json.asp
     var List = ["Fix sink","Make meal preps","workout","Take creatine","Dinner date with GF","Code"];
 
     $(".tabs a span").toArray().forEach(function (element) {
