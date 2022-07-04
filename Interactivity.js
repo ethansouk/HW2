@@ -1,10 +1,5 @@
 var main = function () {
-    var toDos = ["Get groceries",
-                 "Make up some new ToDos",
-                 "Prep for Monday's class",
-                 "Answer emails",
-                 "Take Gracie to the park",
-                 "Finish writing this book"];
+    var List = ["Fix sink","Make meal preps","workout","Take creatine","Dinner date with GF","Code"];
 
     $(".tabs a span").toArray().forEach(function (element) {
         var $element = $(element);
@@ -21,12 +16,12 @@ var main = function () {
 
             if ($element.parent().is(":nth-child(1)")) {
                 $content = $("<ul>");
-                for (i = toDos.length-1; i >= 0; i--) {
-                    $content.append($("<li>").text(toDos[i]));
+                for (i = List.length-1; i >= 0; i--) {
+                    $content.append($("<li>").text(List[i]));
                 }
             } else if ($element.parent().is(":nth-child(2)")) {
                 $content = $("<ul>");
-                toDos.forEach(function (todo) {
+                List.forEach(function (todo) {
                     $content.append($("<li>").text(todo));
                 });
             } else if ($element.parent().is(":nth-child(3)")) {
@@ -35,7 +30,7 @@ var main = function () {
 
                 $button.on("click", function () {
                     if ($input.val() !== "") {
-                        toDos.push($input.val());
+                        List.push($input.val());
                         $input.val("");
                     }
                 });

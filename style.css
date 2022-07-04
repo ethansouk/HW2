@@ -39,13 +39,13 @@
   }
   
   a {
-    color: #f00;
+    color: rgba(0, 89, 255, 0.308);
     text-decoration: none;
     font-weight: bold;
   }
   
   main {
-      background: #fff;
+      background: rgb(209, 34, 34);
       padding: 40px;
   }
   
@@ -55,12 +55,17 @@
       width: 100px;
       margin-right: 10px;
       text-align: center;
-      background: #ddd;
+      background: rgb(221, 221, 221);
       padding: 5px;
+      
+  }
+  .tabs a :hover{
+    background-color: rgb(3,236,3);
   }
   
   .tabs a .active {
-      background: #eee;
+      background: rgb(3, 236, 3);
+     
   }
   
   main .content {
@@ -106,7 +111,7 @@
   }
   
   footer .contact p:nth-child(2) {
-    color: #b33;
+    color: rgb(51, 71, 187);
     font-style: italic;
   }
   
@@ -130,3 +135,5 @@
   footer .sitemap .right {
       float: right;
   }
+
+   
